@@ -4,6 +4,7 @@ import HomePage from './pages/HomePages'
 import AuthCallbackPage from './pages/AuthCallbackPage'
 import UserProfilePage from './pages/UserProfilePage'
 import ProtectedRoute from './auth/ProtectedRoute'
+import ManageRestaurantPage from './pages/ManageRestaurantPage'
 
 
 const AppRoutes = () => {
@@ -20,6 +21,14 @@ const AppRoutes = () => {
               </Layout>
             }
           />
+          <Route
+          path="/manage-restaurant"
+          element={
+            <Layout>
+              <ManageRestaurantPage />
+            </Layout>
+          }
+        />
         </Route>
         <Route path='*' element={<Navigate to='/'/>}/>
     </Routes>
@@ -28,29 +37,4 @@ const AppRoutes = () => {
 
 export default AppRoutes
 
-
-//2
-//<Route path='/user-profile' element={<span>User Profile page</span>}/>
-
-
-// element={<Layout showHero><HomePage/></Layout>} einai to idio me : element={<Layout showHero={true}><HomePage/></Layout>}
-
-//15
-// const AppRoutes = () => {
-//   return (
-//     <Routes>
-//         <Route path='/' element={<Layout showHero><HomePage/></Layout>}/>
-//         <Route path="/auth-callback" element={<AuthCallbackPage />} />
-//         <Route
-//           path="/user-profile"
-//           element={
-//             <Layout>
-//               <UserProfilePage />
-//             </Layout>
-//           }
-//         />        
-//         <Route path='*' element={<Navigate to='/'/>}/>
-//     </Routes>
-//   )
-// }
 
