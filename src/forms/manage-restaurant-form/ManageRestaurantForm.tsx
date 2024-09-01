@@ -11,7 +11,7 @@ import ImageSection from "./ImageSection";
 import LoadingButton from "@/components/LoadingButton";
 import { Button } from "@/components/ui/button";
 import { useEffect } from "react";
-
+import {Restaurant} from '@/types'
 
 const formSchema = z
   .object({
