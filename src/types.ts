@@ -8,7 +8,7 @@ export type User = {
 };
 
 
-//30
+
 export type MenuItem = {
   _id: string;
   name: string;
@@ -28,4 +28,15 @@ export type Restaurant = {
   menuItems: MenuItem[];
   imageUrl: string;
   lastUpdated: string;
+};
+
+
+//24
+export type RestaurantSearchResponse = {
+  data: Restaurant[];
+  pagination: {
+    total: number;
+    page: number;
+    pages: number;
+  };
 };
