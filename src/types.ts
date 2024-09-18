@@ -31,7 +31,6 @@ export type Restaurant = {
 };
 
 
-//24
 export type RestaurantSearchResponse = {
   data: Restaurant[];
   pagination: {
